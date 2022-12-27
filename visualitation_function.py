@@ -2,7 +2,7 @@ import numpy as np
 
 
 def get_label_rotation(angle, offset):
-    # Rotation must be specified in degrees :(
+    # Rotation must be specified in degrees
     rotation = np.rad2deg(angle + offset)
     if angle <= np.pi:
         alignment = "right"
@@ -10,7 +10,6 @@ def get_label_rotation(angle, offset):
     else:
         alignment = "left"
     return rotation, alignment
-
 
 
 
